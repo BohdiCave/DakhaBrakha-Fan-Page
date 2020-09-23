@@ -101,7 +101,6 @@ footer {
         flex-direction: column;
     }
 }
-    
   
 @media (max-width: 500px) {
     h1, h2 {
