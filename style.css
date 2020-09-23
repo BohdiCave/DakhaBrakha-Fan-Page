@@ -1,0 +1,119 @@
+/* general */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: darkslategrey;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0px;
+    font-weight: lighter;
+}
+
+/* header */
+header {
+    top: 0px;
+    width: 100%;
+    background-color: darkslategray;
+    text-align: center;
+}
+
+.band-page {
+    padding: 3px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration : none;
+    text-align: center;
+    color: chocolate;  
+    font-size: 18px;  
+}
+
+/* main content */
+main {
+    clear: both;
+    margin-top: 30px;
+}
+
+/* first row - band image and members' names*/
+#band {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li.members {
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px; 
+}
+
+/* second row - band bio and video */
+#main-row {
+    display: flex;
+    flex-flow: row;
+}
+
+.column-1 {
+    flex: 1 0 50%;
+    margin-top: 20px;
+    padding-left: 50px;
+    line-height: 1.2em;
+}
+
+#bio {
+    font-family: 'Courier New', Courier, monospace;
+}   
+
+iframe {
+    width: 512px;
+    height: 288px;
+    padding-right: 50px;
+}
+
+/* footer */
+footer {
+    clear: both;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.copyright {
+    text-decoration: none;
+    color: chocolate;
+}
+
+/* breakpoints for tablets and smartphones */
+@media (max-width: 766px) {
+    h1 {
+        font-size: 18px;
+    }
+    .band-page, li.members {
+        font-size: 16px;
+    }
+    #main-row {
+        flex-direction: column;
+    }
+}
+    
+  
+@media (max-width: 500px) {
+    h1, h2 {
+        font-size: 18px;
+    }
+    .band-page, li.members, #bio {
+        font-size: 14px;
+    }
+    #main-row {
+        flex-direction: column;
+    }
+    iframe {
+        width: 324px; height: 216px;
+    }
+}
